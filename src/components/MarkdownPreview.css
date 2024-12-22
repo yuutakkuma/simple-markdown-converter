@@ -1,0 +1,12 @@
+.md-preview-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.md-preview-metadata {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
