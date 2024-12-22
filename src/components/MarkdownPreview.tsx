@@ -2,15 +2,13 @@ import "./MarkdownPreview.css";
 import { useAtomValue } from "jotai";
 // atoms
 import { markdownAtom } from "../atoms/markdownAtom";
-// utils
-import { getMarkdownMetadata } from "../utils/getMarkdownMetadata";
-import { getMarkdownContentData } from "../utils/getMarkdownContentData";
+// converter
+import { markdownConverter } from "../converter";
 
 export function MarkdownPreview() {
   const markdown = useAtomValue(markdownAtom);
 
-  const metadata = getMarkdownMetadata(markdown);
-  const html = getMarkdownContentData(markdown);
+  const { metadata, html } = markdownConverter(markdown);
 
   return (
     <div className="md-preview-container">

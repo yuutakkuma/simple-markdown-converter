@@ -55,7 +55,7 @@ function convertMarkdownToHtml(markdown: string) {
   }
 }
 
-export function converter(mdContent: string) {
+export function contentConvert(mdContent: string) {
   let splited = mdContent.split("\n");
   const html = "";
 
