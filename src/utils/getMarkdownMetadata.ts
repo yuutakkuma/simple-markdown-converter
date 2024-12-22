@@ -3,7 +3,7 @@ import {
   extractMetadata,
 } from "../converter/metadata";
 
-export function getMetadata(md: string) {
+export function getMarkdownMetadata(md: string) {
   const extractedMetadata = extractMetadata(md);
   if (!extractedMetadata) {
     return;

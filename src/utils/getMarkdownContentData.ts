@@ -1,6 +1,6 @@
 import { converter } from "../converter/content";
 
-export function getContentData(md: string) {
+export function getMarkdownContentData(md: string) {
   const target = "---";
   const metaStart = md.indexOf(target);
   const metaEnd = md.indexOf(target, metaStart + 1);
